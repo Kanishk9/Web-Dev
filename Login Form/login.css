@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: pink;
+}
+
+.main_div{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.box{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(25, 41, 65);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+h1{
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.inputBox{
+    position: relative;
+}
+
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+
+a{
+    margin: 10px;
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]{
+    background: #03a9f4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 12px;
+    border-radius: 12px;
+    outline: none;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label{
+    top: -16px;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.signup{
+    color: White;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px;
+}
